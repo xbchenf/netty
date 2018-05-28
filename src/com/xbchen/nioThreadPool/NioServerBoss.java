@@ -1,24 +1,21 @@
 package com.xbchen.nioThreadPool;
 
+import com.xbchen.nioThreadPool.pool.Boss;
+import com.xbchen.nioThreadPool.pool.NioSelectorRunnablePool;
+import com.xbchen.nioThreadPool.pool.Worker;
+
 import java.io.IOException;
-import java.nio.channels.ClosedChannelException;
-import java.nio.channels.SelectionKey;
-import java.nio.channels.Selector;
-import java.nio.channels.ServerSocketChannel;
-import java.nio.channels.SocketChannel;
+import java.nio.channels.*;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.Executor;
 
-import com.cn.pool.Boss;
-import com.cn.pool.NioSelectorRunnablePool;
-import com.cn.pool.Worker;
 /**
  * boss实现类
- * @author -琴兽-
+ * @author xbchenf
  *
  */
-public class NioServerBoss extends AbstractNioSelector implements Boss{
+public class NioServerBoss extends AbstractNioSelector implements Boss {
 
 	public NioServerBoss(Executor executor, String threadName, NioSelectorRunnablePool selectorRunnablePool) {
 		super(executor, threadName, selectorRunnablePool);

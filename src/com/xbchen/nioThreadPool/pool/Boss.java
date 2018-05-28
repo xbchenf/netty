@@ -3,7 +3,7 @@ package com.xbchen.nioThreadPool.pool;
 import java.nio.channels.ServerSocketChannel;
 /**
  * boss接口
- * @author -琴兽-
+ * @author xbchenf
  *
  */
 public interface Boss {

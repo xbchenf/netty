@@ -3,7 +3,7 @@ package com.xbchen.nioThreadPool.pool;
 import java.nio.channels.SocketChannel;
 /**
  * worker接口
- * @author -琴兽-
+ * @author xbchenf
  *
  */
 public interface Worker {

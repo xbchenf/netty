@@ -1,12 +1,13 @@
 package com.xbchen.nioThreadPool.pool;
 
+import com.xbchen.nioThreadPool.NioServerBoss;
+import com.xbchen.nioThreadPool.NioServerWorker;
+
 import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicInteger;
-import com.cn.NioServerBoss;
-import com.cn.NioServerWorker;
 /**
  * selector线程管理者
- * @author -琴兽-
+ * @author xbchenf
  *
  */
 public class NioSelectorRunnablePool {

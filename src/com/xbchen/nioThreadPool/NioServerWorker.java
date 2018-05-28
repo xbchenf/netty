@@ -15,7 +15,7 @@ import com.xbchen.nioThreadPool.pool.Worker;
 
 /**
  * worker实现类
- * @author -琴兽-
+ * @author xbchenf
  *
  */
 public class NioServerWorker extends AbstractNioSelector implements Worker {
